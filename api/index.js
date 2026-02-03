@@ -98,7 +98,7 @@ app.post('/api/speech/live', upload.single('audio'), async (req, res) => {
           mode: 'deepgram'
         });
       } else {
-        // Try with parameters
+        // Try with parameter
         console.log('Trying with parameters...');
         
         const params = new URLSearchParams({
